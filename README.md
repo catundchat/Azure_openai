@@ -47,7 +47,11 @@ Microsoft Azure OpenAI Service 申请，部署与 API 调用
 
 ## 部署
 
-- 运行稳定
+- 在 Azure OpenAI 里点击`创建`，新建一个资源组，注意这里的名称，它会成为调用 api 地址的域名之一，比如我这里是“juxue-openai”，最后我得到的 Azure OpenAI 的调用 api 地址是：https://juxue-openai.openai.azure.com/
+
+![image/azure_create](image/azure_create.JPG)
+
+
 
 ## 使用
 
