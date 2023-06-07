@@ -47,12 +47,57 @@ Microsoft Azure OpenAI Service 申请，部署与 API 调用
 
 ## 部署
 
-- 在 Azure OpenAI 里点击`创建`，新建一个资源组，注意这里的名称，它会成为调用 api 地址的域名之一，比如我这里是“juxue-openai”，最后我得到的 Azure OpenAI 的调用 api 地址是：https://juxue-openai.openai.azure.com/
+- 在 Azure OpenAI 里点击`创建`，新建一个资源组，注意这里的名称，它会成为调用 api 地址的域名之一，假如填写 “juxue-openai”，最后我得到的 Azure OpenAI 的调用 api 地址是：https://juxue-openai.openai.azure.com/
 
 ![image/azure_create](image/azure_create.JPG)
 
+- 网络选择 `所有网络`
+- 标记部分不用填，最后审阅 + 提交，等待一会提示部署完成。在下面的界面上可以管理密钥
 
+![azure_model](image/azure_model.JPG)
+
+- 接下来到 Azure OpenAI studio - Deployment 界面，点击 `create new deployment`,从 OpenAI 提供的模型类型中选择 `gpt-35-turbo` 部署
+
+![azure_deployment](image/azure_deployment.JPG)
+
+- endpoint(终结点)为 API 调用地址
+- 管理密钥下可以看到 Azure 生成的两个密钥
+- `api-version`：API 的版本，目前仅支持三个 version，分别是 2023-03-15-preview，2022-12-01，2023-05-15
+- 有了 API 地址和密钥后，就可以调用 Azure OpenAI Service 
 
 ## 使用
 
-调用API 网页端
+### 支持的模型及花费
+
+![azure_price.JPG](image/azure_price.JPG)
+
+### 聊天功能
+
+在 Azure AI Studio 的 `Chat playground` 中使用聊天功能
+
+![azure_chatplayground](image/azure_playground.JPG)
+
+### API 调用
+
+调用 API 示例如下，其中，密钥可在 Azure OpenAI 中查看，调用 API URL为：
+https://openai资源名称.openai.azure.com/openai/deployments/部署的模型名称/completions?api-version=2023-03-15-preview
+
+
+```
+import openai
+openai.api_type = "azure"
+openai.api_base = "https://openai资源名称.openai.azure.com/"
+openai.api_version = "2023-03-15-preview"
+openai.api_key = 'your-personal-key'
+
+response = openai.ChatCompletion.create(
+  engine="部署的模型名称",
+  messages = [{"role":"system","content":"You are an AI assistant that helps people find information."},
+  {'role':'user','content':'这里输入你的问题'}],
+  temperature=0.7,
+  max_tokens=800,
+  top_p=0.95,
+  frequency_penalty=0,
+  presence_penalty=0,
+  stop=None)
+```
