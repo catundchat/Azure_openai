@@ -26,7 +26,7 @@ Microsoft Azure OpenAI Service 申请，部署与 API 调用
 
 - 点击`即用即付`旁边的`升级`按钮，而后选择方案，这里我们选择`基本`后点击`升级`，等待一会之后就能看到订阅 ID 
 
-![image/azure_suscription_id](image/azure_subscription_id.JPG)
+![image/azure_subscription_id](image/azure_suscription_id.JPG)
 
 ### 申请 Azure OpenAI Service
 
@@ -47,7 +47,7 @@ Microsoft Azure OpenAI Service 申请，部署与 API 调用
 
 ## 部署
 
-- 在 Azure OpenAI 里点击`创建`，新建一个资源组，注意这里的名称，它会成为调用 api 地址的域名之一，假如填写 “juxue-openai”，最后我得到的 Azure OpenAI 的调用 api 地址是：https://juxue-openai.openai.azure.com/
+- 在 Azure OpenAI 里点击`创建`，新建一个资源组，注意这里的名称，它会成为调用 api 地址的域名之一，假如填写 “juxue-openai”，最后我得到的 Azure OpenAI 的调用 api 地址是 `https://juxue-openai.openai.azure.com/`
 
 ![image/azure_create](image/azure_create.JPG)
 
@@ -75,12 +75,12 @@ Microsoft Azure OpenAI Service 申请，部署与 API 调用
 
 在 Azure AI Studio 的 `Chat playground` 中使用聊天功能
 
-![azure_chatplayground](image/azure_playground.JPG)
+![azure_chatplayground](image/azure_chatplayground.JPG)
 
 ### API 调用
 
 调用 API 示例如下，其中，密钥可在 Azure OpenAI 中查看，调用 API URL为：
-https://openai资源名称.openai.azure.com/openai/deployments/部署的模型名称/completions?api-version=2023-03-15-preview
+`https://openai资源名称.openai.azure.com/openai/deployments/部署的模型名称/completions?api-version=2023-03-15-preview`
 
 
 ```
