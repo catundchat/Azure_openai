@@ -1,6 +1,20 @@
-# Azure_openai
+# Azure_openai 指南
 
-Microsoft Azure OpenAI Service 申请，部署与 API 调用
+Microsoft Azure OpenAI Service 申请，部署与使用
+
+# 目录
+
+- [申请](#申请)
+  - [准备工作](#准备工作)
+  - [Azure 注册](#Azure-注册)
+  - [订阅 ID](#订阅-ID)
+  - [申请 Azure OpenAI Service](#申请-azure-openai-service)
+- [部署](#部署)
+- [使用](#使用)
+  - [支持的模型及花费](#支持的模型及花费)
+  - [聊天功能](#聊天功能)
+  - [API调用](#api-调用)
+- [参考资料](#参考资料)
 
 ## 申请
 
@@ -77,11 +91,10 @@ Microsoft Azure OpenAI Service 申请，部署与 API 调用
 
 ![azure_chatplayground](image/azure_chatplayground.JPG)
 
-### API 调用
+### API-调用
 
 调用 API 示例如下，其中，密钥可在 Azure OpenAI 中查看，调用 API URL为：
 `https://openai资源名称.openai.azure.com/openai/deployments/部署的模型名称/completions?api-version=2023-03-15-preview`
-
 
 ```
 import openai
