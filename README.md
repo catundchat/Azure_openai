@@ -101,3 +101,10 @@ response = openai.ChatCompletion.create(
   presence_penalty=0,
   stop=None)
 ```
+
+## 参考资料
+1. [如何从 OpenAI 迁移到 Azure OpenAI 🧐（保姆级教程，包含如何兼容 JS 语言版 LangChain）](https://juejin.cn/post/7241095368179826748)
+2. [Azure OpenAI的使用指南](https://zhuanlan.zhihu.com/p/618541541)
+3. [Azure OpenAI API 申请和使用](https://razeen.me/posts/how-to-apply-and-use-azure-openai-api/)
+4. [Azure OpenAI Service申请链接](aka.ms/oai/access)
+5. [Azure OpenAI GPT-4申请链接](aka.ms/oai/get-gpt4)
