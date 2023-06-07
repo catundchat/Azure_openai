@@ -33,7 +33,17 @@ Microsoft Azure OpenAI Service 申请，部署与 API 调用
 - 现在我们已经有了 Azure 的订阅 ID ，需要申请 Azure OpenAI Service 后才能使用，这里给出申请链接，需要先有 Azure OpenAI Service 才能申请 GPT-4
 - Request Access to Azure OpenAI Service : `aka.ms/oai/access`
 - Azure OpenAI GPT-4 Public Preview Waitlist : `aka.ms/oai/get-gpt4`
-- 总共有约25个选项。注意要提供公司信息，网址，电话等。
+- 总共有约25个选项。注意要提供公司信息，网址，电话等。如果需要多个服务的话则需要提供多个订阅 ID ，这里我们勾选一个
+
+![image/azure_application](image/azure_application.JPG)
+
+- 我在填写完毕两天后收到了补交材料的邮件，需要提供 company’s web domain 用以验证公司身份
+
+![image/azure_web_domain](image/azure_web_domain.JPG)
+
+- 提交完毕后收到 onboarding 邮件，可以使用 Azure OpenAI Service 了
+
+![image/azure_onboarding](image/azure_onboarding.JPG)
 
 ## 部署
 
