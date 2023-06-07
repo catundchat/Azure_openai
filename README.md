@@ -47,6 +47,8 @@ Microsoft Azure OpenAI Service 申请，部署与 API 调用
 
 ## 部署
 
+- 运行稳定
+
 ## 使用
 
 调用API 网页端
