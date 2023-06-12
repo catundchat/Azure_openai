@@ -114,6 +114,23 @@ response = openai.ChatCompletion.create(
   presence_penalty=0,
   stop=None)
 ```
+### 微调功能
+
+Azure AI Studio 中的微调工作流要求执行以下步骤：
+
+- 准备训练和验证数据
+- 使用 Azure AI Studio 中的“创建自定义模型”向导来训练自定义模型
+- 选择基础模型
+- 选择训练数据
+- 检查所做的选择并训练新的自定义模型
+- 检查自定义模型的状态
+- 部署自定义模型以供使用
+
+其中可选择的模型与 OpenAI 官网开放的微调模型类别相同为以下几种：`ada, babbage, curie, code-cushman-001, davinci`
+
+### 内容过滤
+
+Azure OpenAI服务包括一个内容过滤系统，与核心模型一起工作。该系统的工作方式是通过分类模型的集合来运行提示和完成，旨在检测和防止有害内容的输出。该内容过滤系统在输入提示和输出完成中检测特定类别的潜在有害内容并采取行动。API配置和应用程序设计的变化可能会影响完成度，从而影响过滤行为。该内容过滤系统支持以下语言： 英语、德语、日语、西班牙语、法语、意大利语、葡萄牙语和中文。它可能无法检测到未经训练或测试的语言中的不适当内容。其中包含四种评价指标：`Hate, Sexual, Violence, Self-harm`, 针对不同的有害内容分为四种严重程度：`Safe, Low, Medium, High`
 
 ## 参考资料
 1. [如何从 OpenAI 迁移到 Azure OpenAI 🧐（保姆级教程，包含如何兼容 JS 语言版 LangChain）](https://juejin.cn/post/7241095368179826748)
