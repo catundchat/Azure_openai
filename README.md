@@ -18,6 +18,8 @@ Microsoft Azure OpenAI Service 申请，部署与使用
   - [内容过滤](#内容过滤)
 - [参考资料](#参考资料)
 
+[2023-9-11Update] gpt-4 and gpt-4-32k is available in Microsoft Azure OpenAI Service
+
 ## 申请
 
 ### 准备工作
@@ -85,7 +87,7 @@ Microsoft Azure OpenAI Service 申请，部署与使用
 
 ### 支持的模型及花费
 
-![azure_price.JPG](image/azure_price.JPG)
+![Azure_pricing.PNG](image/Azure_pricing.PNG)
 
 ### 聊天功能
 
